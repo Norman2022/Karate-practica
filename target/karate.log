@@ -1,0 +1,65 @@
+01:30:50.076 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @ejerAcademy
+01:30:51.948 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:30:51.973 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+01:30:53.914 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+01:30:54.802 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.clockify.me/api/v1/workspaces/6284190cbf8ca01b7b85a380/time-entries
+1 > X-Api-Key: OWVjYTc1MGItMmQ3Yi00ZmYwLTg0MDgtMWQ1MWE2MGIzNDZl
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 243
+1 > Host: api.clockify.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"start":"2022-06-12T13:48:14.000Z","billable":"true","description":"AddTimeEntry","projectId":"628455aebf8ca01b7b88297b","taskId":"","end":"2022-06-12T13:50:14.000Z","tagIds":[""],"customFields":[{"customFieldId":"","value":"San Francisco"}]}
+
+01:30:56.383 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1576
+1 < 201
+1 < Date: Sun, 05 Jun 2022 04:30:56 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 355
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expected-Client-Version: 1.0.0
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < X-Auth-Checksum: 5853dc19463a6e859434f82015eb23633ee736d543b3dc2d9abb0092e5ef0722
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-Xss-Protection: 1; mode=block
+{"id":"629c318029ff3d22f3fa7ae8","description":"AddTimeEntry","tagIds":[""],"userId":"6284190bbf8ca01b7b85a37a","billable":true,"taskId":"","projectId":"628455aebf8ca01b7b88297b","timeInterval":{"start":"2022-06-12T13:48:14Z","end":"2022-06-12T13:50:14Z","duration":"PT2M"},"workspaceId":"6284190cbf8ca01b7b85a380","isLocked":false,"customFieldValues":[]}
+
+01:31:01.453 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > PUT https://api.clockify.me/api/v1/workspaces/6284190cbf8ca01b7b85a380/time-entries/629c318029ff3d22f3fa7ae8
+2 > X-Api-Key: OWVjYTc1MGItMmQ3Yi00ZmYwLTg0MDgtMWQ1MWE2MGIzNDZl
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 247
+2 > Host: api.clockify.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+2 > Accept-Encoding: gzip,deflate
+{"start":"2022-06-12T13:48:14.000Z","billable":"true","description":"EditingTimeEntry","projectId":"628455aebf8ca01b7b88297b","taskId":"","end":"2022-06-12T13:50:14.000Z","tagIds":[""],"customFields":[{"customFieldId":"","value":"San Francisco"}]}
+
+01:31:02.603 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1150
+2 < 200
+2 < Date: Sun, 05 Jun 2022 04:31:02 GMT
+2 < Content-Type: application/json
+2 < Content-Length: 357
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Expected-Client-Version: 1.0.0
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < X-Auth-Checksum: 5853dc19463a6e859434f82015eb23633ee736d543b3dc2d9abb0092e5ef0722
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-Xss-Protection: 1; mode=block
+{"id":"629c318029ff3d22f3fa7ae8","description":"EditingTimeEntry","tagIds":[],"userId":"6284190bbf8ca01b7b85a37a","billable":true,"taskId":"","projectId":"628455aebf8ca01b7b88297b","timeInterval":{"start":"2022-06-12T13:48:14Z","end":"2022-06-12T13:50:14Z","duration":"PT2M"},"workspaceId":"6284190cbf8ca01b7b85a380","isLocked":false,"customFieldValues":[]}
+
+01:31:04.372 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:examples/users/ejeKarate.feature

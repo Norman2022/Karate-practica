@@ -1,0 +1,17 @@
+{
+  "start": "2022-06-12T13:48:14.000Z",
+  "billable": "true",
+  "description": "EditingTimeEntry",
+  "projectId": "628455aebf8ca01b7b88297b",
+  "taskId": "",
+  "end": "2022-06-12T13:50:14.000Z",
+  "tagIds": [
+    ""
+  ],
+  "customFields": [
+    {
+      "customFieldId" : "",
+      "value": "San Francisco"
+    }
+  ]
+}
